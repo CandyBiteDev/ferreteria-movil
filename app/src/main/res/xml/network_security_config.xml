@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- La API corre en la PC del laboratorio/casa por HTTP en la red local; la IP cambia según la red,
+     por eso se permite tráfico sin cifrar. En producción se usaría HTTPS. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

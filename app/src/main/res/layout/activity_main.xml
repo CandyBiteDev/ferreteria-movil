@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primario"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarBlanca"
+        app:title="Stock por bodega"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bodega"
+            android:textColor="@color/texto_secundario"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spinBodega"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <EditText
+            android:id="@+id/txtBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/fondo_campo"
+            android:drawablePadding="8dp"
+            android:hint="Buscar por código, nombre o categoría"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="12dp" />
+
+        <Button
+            android:id="@+id/btnTransferencias"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/info"
+            android:text="Transferencias por recibir"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblResumen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/texto_secundario" />
+
+            <ProgressBar
+                android:id="@+id/progreso"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listaExistencias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/lblVacio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Sin productos para mostrar"
+            android:textColor="@color/texto_secundario" />
+    </FrameLayout>
+</LinearLayout>

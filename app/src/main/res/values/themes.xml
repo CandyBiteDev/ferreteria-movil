@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema claro fijo: los colores de las pantallas están pensados para fondo claro -->
+    <style name="Base.Theme.FerreteriaMovil" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorSecondary">@color/info</item>
+        <item name="android:statusBarColor">@color/primario_oscuro</item>
+    </style>
+
+    <style name="Theme.FerreteriaMovil" parent="Base.Theme.FerreteriaMovil" />
+
+    <!-- Íconos y menú de desbordamiento en blanco sobre la barra naranja -->
+    <style name="ToolbarBlanca" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="subtitleTextColor">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Se mantiene el tema claro también en modo oscuro (ver values/themes.xml) -->
+    <style name="Base.Theme.FerreteriaMovil" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorSecondary">@color/info</item>
+        <item name="android:statusBarColor">@color/primario_oscuro</item>
+    </style>
+</resources>
