@@ -96,8 +96,9 @@ public final class ApiClient {
                         + "Verifica que:\n"
                         + "• La aplicación de escritorio esté abierta.\n"
                         + "• El celular y la PC estén en la misma red Wi-Fi.\n"
-                        + "• La IP sea la que muestra la ventana de login del escritorio.\n"
-                        + "• En el emulador usa 10.0.2.2.", -1));
+                        + "• La IP sea la que muestra la ventana de login del escritorio\n"
+                        + "  (cambia si la PC se conecta a otra red).\n"
+                        + "• El Firewall de Windows permita Java en redes privadas.", -1));
             } catch (Exception e) {
                 principal.post(() -> r.error("Error: " + e.getMessage(), -1));
             }

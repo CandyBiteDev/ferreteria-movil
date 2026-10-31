@@ -19,10 +19,8 @@ La app **no se conecta a MySQL**: consume la API REST autenticada del sistema de
 ## Cómo ejecutarla
 1. Abrir y ejecutar la aplicación de escritorio en la PC (levanta la API en el puerto 8080).
 2. Abrir este proyecto en Android Studio y ejecutarlo en el celular o en el emulador.
-3. En el campo **Servidor** escribir:
-   - **Celular por Wi-Fi:** la IP que muestra el login del escritorio, ej. `192.168.3.87:8080`
-     (misma red Wi-Fi que la PC).
-   - **Emulador o celular por USB:** ejecutar `adb reverse tcp:8080 tcp:8080` y escribir `127.0.0.1:8080`.
+3. En el campo **Servidor** escribir la IP que muestra el login del escritorio, ej. `192.168.3.87:8080`.
+   Sirve igual en el celular (misma red Wi-Fi que la PC) y en el emulador.
 4. **Probar conexión** y luego ingresar, por ejemplo con `encargado.mixco`
    (las contraseñas de prueba están en el README del repositorio de escritorio).
 

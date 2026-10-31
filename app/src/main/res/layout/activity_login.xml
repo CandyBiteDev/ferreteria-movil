@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
-                    android:text="La IP aparece en la ventana de login del escritorio. Emulador: 10.0.2.2:8080"
+                    android:text="Escribe la IP que muestra el login del escritorio, ej. 192.168.1.10:8080 (sirve en celular y emulador)"
                     android:textColor="@color/texto_secundario"
                     android:textSize="12sp" />
 
